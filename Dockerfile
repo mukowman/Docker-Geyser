@@ -10,6 +10,7 @@ RUN apt-get update \
     openjdk-17-jre-headless \
     vim \
     wget \
+ && mkdir -p /opt/geyser \
  && wget --quiet --directory-prefix /opt/geyser --output-document /opt/geyser/Geyser-Standalone.jar "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone" \
  # && wget --quiet --directory-prefix /opt/geyser "https://ci.geysermc.org/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/standalone/build/libs/Geyser-Standalone.jar" \
  # && wget --quiet --directory-prefix /opt/geyser "https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/standalone/build/libs/Geyser-Standalone.jar" \
